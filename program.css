@@ -1,0 +1,92 @@
+/* Article container styling */
+article {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  article h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 2px gray;
+  }
+  
+  /* Course container */
+  .Course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Individual course cards */
+  .program {
+    background-color: rgba(4, 49, 70, 0.913);
+    width: 30%;
+    min-width: 280px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .program img {
+    width:95%;
+    height: 300px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .program h4 {
+    font-size: 1.2rem;
+    color: #f8f7f7;
+  }
+  
+  .program p {
+    font-size: 20px;
+    color: #f6f0f0;
+    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif
+  }
+  .Readmore {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+}
+    
+
+  .Readmore a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .Readmore a:hover {
+    background-color: #316534;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .Course-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .program {
+      width: 90%;
+    }
+  
+    .program img {
+      float: none;
+      margin: 0 auto 15px;
+    }
+  }
+  

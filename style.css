@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(4, 49, 70, 0.913); 
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+.college-name{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:25px;
+}
+.college-name:hover{
+    color: orange;
+}
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+nav ul li {
+    position: relative;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size:medium;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: orange;
+}
+
+.sub-nav {
+    display: none; 
+    position: absolute; 
+    left: 0;
+    background-color: rgba(253, 175, 6, 0.893);
+    border-radius: 5px;
+    z-index: 2; 
+    width: 200px;
+}
+
+nav ul li:hover .sub-nav {
+    display: block;
+}
+
+.sub-nav li {
+    display: block; 
+    margin:0; 
+    padding: 10px;
+}
+
+.sub-nav li a {
+    padding:10px 20px; 
+    color: rgb(253, 253, 253);
+    text-decoration: none; 
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.sub-nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: #0b0b0b;
+    width: 100%; 
+}
+
+
+.footer {
+    background-image: url('f4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+
+.footer-content {
+    padding: 10px;
+    max-width: 1200px;
+    margin-left: 20px;
+
+}
+
+.footer-content h3{
+    font-size: 30px;
+    color:bisque;
+    text-overflow:ellipsis;
+}
+.footer-content dt, dd{
+    font-size: 20px;
+    color:bisque;
+    text-align: left;
+}
+
